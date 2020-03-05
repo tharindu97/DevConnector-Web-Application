@@ -2,5 +2,5 @@
     "mongoURI":"mongodb+srv://Tharindu97:Tharindu97@devconnector-t9kxm.mongodb.net/test?retryWrites=true&w=majority",
     "jwtSecret": "mysecrettoken",
     "githubClientId":"dc9af257b9663fd0ac32",
-    "githubSecret":"5ac89454e3d00a97d9336fe5f6ed18212eac09de"
+    "githubSecrect":"5ac89454e3d00a97d9336fe5f6ed18212eac09de"
 }
