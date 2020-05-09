@@ -6,12 +6,9 @@
  const Dashboard = ({ getCurrentProfile, auth, profile }) => {
      useEffect(() => {
         getCurrentProfile();
-     }, []);
-     return (
-         <div>
-             Dashboard
-         </div>
-     )
+     },[]);
+     return <div> Dashboard</div>
+     
  }
  
  Dashboard.propTypes = {
@@ -26,5 +23,5 @@
  });
 
  
-export default connect( mapStateToProps, { getCurrentProfile })(Dashboard);
+export default connect(mapStateToProps,{getCurrentProfile})(Dashboard);
  
