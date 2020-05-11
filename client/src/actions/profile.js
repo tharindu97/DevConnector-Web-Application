@@ -60,5 +60,3 @@ export const createProfile = (formData, history, edit = false) => async dispatch
         });
     }
 };
-
-// 5 11
