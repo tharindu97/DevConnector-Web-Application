@@ -20,7 +20,11 @@ const AddExperience = ({ addExperience, history }) => {
     const [toDateDisabled, toggleDisabled] = useState(false);
     const { company, title, location, from, to, current, description, } = formData;
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value});
-
+    const onSubmit = e => {
+        e.preventDefault();
+       addExperience(formData, history);
+    };
+ 
     return (
         <Fragment>
             <h1 className="large text-primary">
@@ -31,10 +35,7 @@ const AddExperience = ({ addExperience, history }) => {
                 positions that you have had in the past
             </p>
             <small>* = required field</small>
-            <form className="form" onSubmit={e => {
-                e.preventDefault();
-                addExperience(formData, history);
-            }}>
+            <form className="form" onSubmit={e => onSubmit(e)}>
                 <div className="form-group">
                 <input type="text" placeholder="* Job Title" name="title" value={title} onChange={e => onChange(e)} required />
                 </div>
